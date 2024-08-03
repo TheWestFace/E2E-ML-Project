@@ -1,0 +1,28 @@
+# config.yaml
+models:
+  RandomForest:
+    n_estimators: [50, 100, 200]
+    max_depth: [None, 10, 20, 30]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+  DecisionTree:
+    max_depth: [None, 10, 20, 30]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+  GradientBoosting:
+    n_estimators: [50, 100, 200]
+    learning_rate: [0.01, 0.1, 0.2]
+    max_depth: [3, 4, 5]
+  LinearRegression:
+    fit_intercept: [True, False]
+  XGBRegressor:
+    n_estimators: [50, 100, 200]
+    learning_rate: [0.01, 0.1, 0.2]
+    max_depth: [3, 4, 5]
+  CatBoost:
+    iterations: [100, 200, 300]
+    depth: [3, 4, 5]
+    learning_rate: [0.01, 0.1, 0.2]
+  AdaBoost:
+    n_estimators: [50, 100, 200]
+    learning_rate: [0.01, 0.1, 0.2]
